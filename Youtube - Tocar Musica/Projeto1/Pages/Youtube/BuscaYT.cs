@@ -55,15 +55,6 @@ namespace Projeto1.Pages.Youtube
             Esperar().Until(ExpectedConditions.ElementIsVisible(By.XPath("//a[@title='MC Hariel - Exemplos Feat. MC Neguinho do Kaxeta (GR6 Explode) Faixa 8 - DVD Mundão Girou'] ")));
             ClicaMusica().Click();
         }
-        private IWebElement Anuncio()
-        {
-            return driver.FindElement(By.XPath("//div[@id='ad-text:6']"));
-        }
-        public void pular()
-        {
-            Esperar().Until(ExpectedConditions.ElementIsVisible(By.XPath("//div[@id='ad-text:6']")));
-            Anuncio().Click();
-        }
         private By ProgressoMusica()
         {
             return By.XPath("//div[@class='ytp-progress-list']");
