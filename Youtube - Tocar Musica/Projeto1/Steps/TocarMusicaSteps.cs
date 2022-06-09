@@ -39,11 +39,6 @@ namespace Projeto1.Steps
         {
             buscayt.clicomusica();
         }
-        [Given(@"pular anuncio")]
-        public void PuloOAnuncio()
-        {
-            buscayt.pular();
-        }
         [Then(@"valido se a musica esta tocando")]
         public void EntaoValidoSeAMusicaEstaTocando()
         {
